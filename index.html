@@ -162,14 +162,15 @@ h2, h3 {
 
 /* ========== FOOTER ========== */
 .footer { background: #2b0e1c; color: #ffffff; font-family: "Segoe UI", Arial, sans-serif; }
-.footer-container { max-width: 1200px; margin: auto; padding: 50px 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-.footer-column h3 { font-size: 22px; margin-bottom: 15px; color: #D4CBC4; }
-.footer-column h4 { font-size: 18px; margin-bottom: 12px; color: #ffffff; }
-.footer-column p { font-size: 14px; line-height: 1.6; color: #e5d6dc; }
+.footer-container { max-width: 1200px; margin: auto; padding: 50px 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.footer-column h3 { font-size: 22px; margin-bottom: 15px; color: #D4CBC4; font-family: 'Playfair Display', serif; }
+.footer-column h4 { font-size: 17px; margin-bottom: 12px; color: #ffffff; border-bottom: 1px solid rgba(212, 203, 196, 0.3); display: inline-block; padding-bottom: 4px; }
+.footer-column p { font-size: 13.5px; line-height: 1.6; color: #e5d6dc; margin-bottom: 10px; }
+.footer-column strong { color: #D4CBC4; }
 .footer-disclaimer { background: #1f0a14; padding: 15px 20px; text-align: center; }
-.footer-disclaimer p { font-size: 13px; color: #d4cbc4; margin: 0; }
+.footer-disclaimer p { font-size: 12px; color: #d4cbc4; margin: 0; }
 .footer-bottom { border-top: 1px solid rgba(212, 203, 196, 0.2); text-align: center; padding: 15px 10px; }
-.footer-bottom p { font-size: 13px; color: #d4cbc4; margin: 0; }
+.footer-bottom p { font-size: 12px; color: #d4cbc4; margin: 0; }
 
 /* ========== CHATBOT TRIGGER STYLE ========== */
 .bot-trigger {
@@ -212,7 +213,10 @@ h2, h3 {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    .footer-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
     .navbar { padding: 15px 25px; flex-direction: column; gap: 10px; }
     .hero-text h1 { font-size: 2.2rem; }
     .row, .row.reverse { flex-direction: column; }
@@ -240,7 +244,7 @@ h2, h3 {
         <a href="#diseases">Diseases</a>
         <a href="#ai">AI Screening</a>
         <a href="#tips">Precaution</a>
-        <a href="#faq">FAQ</a>
+        <a href="#faq">FAQs</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -421,7 +425,7 @@ h2, h3 {
 </section>
 
 <section id="faq" class="faq">
-    <h2>FAQ</h2>
+    <h2>FAQs</h2>
     <p class="subtitle">Here are some of the frequently asked questions</p>
 
     <div class="faq-container">
@@ -510,23 +514,39 @@ h2, h3 {
 <footer id="contact" class="footer">
     <div class="footer-container">
       <div class="footer-column">
-        <h3>Eye Awareness</h3>
-        <p>Spreading awareness about eye health and encouraging early detection to prevent avoidable vision loss. This initiative educates people about common eye diseases, prevention methods, and regular eye checkups.</p>
+        <h4>Eye Awareness</h4>
+        <p>Spreading awareness about eye health and encouraging early detection to prevent avoidable vision loss. This initiative educates people about common eye diseases and prevention methods, and regular eye checkups.</p>
       </div>
+
       <div class="footer-column">
         <h4>Academic Project</h4>
         <p><strong>Project Title:</strong><br>A Web-Based Intelligent System for Awareness & Early Identification of Retinal Diseases</p>
-        <p><strong>Programme:</strong><br>C2S – Chips to Startup (MeitY, Govt. of India)</p>
-        <p><strong>Project Type:</strong><br>Academic & Social Awareness Project</p>
-      </div>
+        <p><strong>Programme:</strong><br>C2S – Chips to Startup <br>(MeitY, Govt. of India)</p>
+         <p><strong>Project Type:</strong><br>Academic & Social Awareness Project</p>
+      
+</div>
+
       <div class="footer-column">
         <h4>Institution</h4>
-        <p>Mohamed Sathak Engineering College<br>Department of Electronics and Communication Engineering<br>Kilakarai – 623806<br>Ramanathapuram District, Tamil Nadu</p>
+        <p>Mohamed Sathak Engineering College<br>
+        Department of Electronics and Communication Engineering<br>
+        Kilakarai – 623806<br>
+        Ramanathapuram District, Tamil Nadu</p>
+
+      </div>
+
+      <div class="footer-column">
+        <h4>Project Team</h4>
+        <p><strong>Chief Investigator(CI):</strong> <br>Dr. E. Dhiravidachelvi<br>Professor, ECE </p>
+        <p><strong>Senior & Junior Research Fellow:</strong> <br>Mrs. K. Sabitha Banu</p>
+        <p><strong>Developed By:</strong> <br>Ms. M. Naveetha Thaslim <br>Ms. M. Asifa Farhana</p>
       </div>
     </div>
+
     <div class="footer-disclaimer">
-      <p>Disclaimer: This website is created for educational and awareness purposes only. It does not replace professional medical consultation. Please consult a qualified ophthalmologist for diagnosis and treatment.</p>
+      <p>Disclaimer: This website is for educational and awareness purposes only. It does not replace professional medical consultation. Please consult a qualified ophthalmologist for diagnosis.</p>
     </div>
+
     <div class="footer-bottom">
       <p>© 2026 Eye Awareness Project | Mohamed Sathak Engineering College | Developed under C2S–MeitY Initiative | All Rights Reserved</p>
     </div>
